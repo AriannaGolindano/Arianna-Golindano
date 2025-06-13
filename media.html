@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multimedia Gallery</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #ffe6f0, #e6f0ff);
+      color: #4b3f72;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+      background-color: #fce4ec;
+    }
+
+    nav {
+      background-color: #f8bbd0;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: #6a1b9a;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #e1bee7;
+      color: white;
+    }
+
+    nav a:active {
+      background-color: #ce93d8;
+      color: white;
+    }
+
+    h1 {
+      color: #b388eb;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #7e57c2;
+      font-size: 22px;
+      margin-top: 30px;
+    }
+
+    .media-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      border-radius: 10px;
+      border: 2px solid #d1c4e9;
+    }
+
+    video, audio, iframe {
+      display: block;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 10px;
+      border: 2px solid #ce93d8;
+      background-color: white;
+    }
+
+    iframe {
+      height: 315px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>My Multimedia Gallery</h1>
+  </header>
+
+   <nav>
+    <ul>
+      <li><a href="index.html">My Index</a></li>
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#localvideo">Local Video</a></li>
+      <li><a href="#video">Youtube Video</a></li>
+      <li><a href="#audio">Short Audio</a></li>
+    </ul>
+  </nav>
+
+  <div class="media-section">
+    <h2 id="photos">Photos</h2>
+    <img src="content/photo1.png" alt="Sample 1">
+    <img src="content/photo2.jpg" alt="Sample 2">
+    <img src="content/photo3.png" alt="Sample 3">
+
+    <h2 id="localvideo">Local Video</h2>
+    <video controls>
+      <source src="content/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h2 id="video">YouTube Video</h2>
+    <iframe src="https://www.youtube.com/embed/5OflOlcHLb8" allowfullscreen></iframe>
+
+    <h2 id="audio">Short Audio</h2>
+    <audio controls>
+      <source src="content/audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</body>
+</html>
